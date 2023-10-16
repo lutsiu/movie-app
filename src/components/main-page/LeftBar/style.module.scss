@@ -1,0 +1,24 @@
+.logo {
+  font-family: 'Luckiest Guy', sans-serif;
+}
+
+.navLink {
+  @apply flex gap-[1.5rem] items-center relative duration-500;
+  &::before {
+    content: '';
+    @apply absolute right-0 h-full w-[0.1rem] bg-main opacity-0 duration-500; 
+  }
+  &:hover::before {
+    @apply opacity-100;
+  }
+  &:hover {
+    @apply text-main;
+  }
+  &Active {
+    @apply text-main relative;
+    &::after {
+      content: '';
+      @apply absolute right-0 h-full w-[0.1rem] bg-main duration-500; 
+    }
+  }
+}

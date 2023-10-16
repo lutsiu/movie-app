@@ -1,0 +1,16 @@
+.slide {
+  @apply min-w-full bg-cover w-full   bg-no-repeat ease-in-out duration-500 relative;
+  &::before {
+    content: '';
+    @apply absolute w-full h-full;
+    background: linear-gradient(0deg, rgba(22, 24, 30, 0.5), rgba(22, 24, 30, 0.5));
+  }
+}
+.popularCard {
+  @apply w-full sm:w-[48%] md:w-0 md:flex-1 mb-[2.5rem]  bg-cover bg-center bg-no-repeat relative h-[30rem] rounded-[1.7rem] overflow-hidden;
+  &::before {
+    content: '';
+    @apply absolute w-full h-full;
+    background: linear-gradient(0deg, rgba(22, 24, 30, 0.5), rgba(22, 24, 30, 0.5));
+  }
+}

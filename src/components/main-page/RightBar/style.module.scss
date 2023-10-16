@@ -1,0 +1,24 @@
+.auth {
+  &:hover + .dropdown {
+    @apply opacity-80 pointer-events-auto;
+  }
+}
+.dropdown {
+  &:hover {
+    @apply opacity-80 pointer-events-auto;
+  }
+}
+
+.image {
+  @apply w-[22rem]  p-[1rem] rounded-3xl relative bg-center bg-no-repeat bg-cover overflow-hidden ;
+  &::before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-full bg-gray-900 opacity-60 duration-300;
+  }
+
+  & > * {
+    z-index: 2;
+  }
+
+  
+}
