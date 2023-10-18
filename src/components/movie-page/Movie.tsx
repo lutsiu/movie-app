@@ -32,7 +32,7 @@ export default function Movie() {
       }}
     >
       <div className="absolute">
-        <BackHomeButton link="/home" />
+        <BackHomeButton link="/" />
       </div>
       <div
         className="relative w-[100%] mt-[8rem] h-fit flex justify-evenly gap-[5rem] movie"
